@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>products</title>
+
+    <!-- font awesome cdn link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- custom js file link  -->
+<script src="js/script.js" defer></script>
+
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header class="header">
+
+        <a href="home.html" class="logo"> EYEWEAR BY JOAN </a>
+  <nav class="navbar">
+        <ul>
+            <li><a href="home.html">home</a></li>
+             <li><a href="about.html">about</a></li>
+            <li><a href="products.html">products</a></li>
+               <li><a href="catalog.html">catalog</a></li>
+            <li><a href="contact.html">contact</a></li>
+            <li><a href="login.html">login</a></li>
+        </ul>
+    </nav>
+
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <a href="cart.html" class="fas fa-shopping-cart"></a>
+    </div>
+
+
+    <form action="" class="search-form">
+        <input type="search" name="" placeholder="search here..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- header section  -->
+
+    <section class="heading">
+        <h1>our products</h1>
+        <p> <a href="home.html">home</a> >> products </p>
+    </section>
+
+    <!-- header section -->
+
+    <!-- prodcuts section starts  -->
+<!-- Signature Frames -->
+<section class="products">
+    <h1 class="title">Featured Products</h1>
+    <h2 class="category-title">Signature Frames</h2>
+    <div class="box-container">
+
+        <div class="box" id="aurora">
+            <div class="image">
+                <div class="icons">
+                    <a href="javascript:void(0);" class="fas fa-shopping-cart" title="Add to Cart" 
+                       onclick="addToCart('Aurora', 15000, 'images/product 10.jpg')"></a>
+                </div>
+                <img src="images/product 10.jpg" alt="Aurora">
+            </div>
+            <div class="content">
+                <h3><a href="products.html#aurora">Aurora</a></h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <div class="price">15,000 XAF<span>20,000 XAF</span></div>
+            </div>
+        </div>
+
+        <div class="box" id="luna">
+            <div class="image">
+                <div class="icons">
+                    <a href="javascript:void(0);" class="fas fa-shopping-cart" title="Add to Cart" 
+                       onclick="addToCart('Luna', 10000, 'images/product 28.jpg')"></a>
+                </div>
+                <img src="images/product 28.jpg" alt="Luna">
+            </div>
+            <div class="content">
+                <h3><a href="products.html#luna">Luna</a></h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">10,000 XAF<span>15,000 XAF</span></div>
+            </div>
+        </div>
+
+        <div class="box" id="solace">
+            <div class="image">
+                <div class="icons">
+                    <a href="javascript:void(0);" class="fas fa-shopping-cart" title="Add to Cart" 
+                       onclick="addToCart('Solace', 12000, 'images/product 30.jpg')"></a>
+                </div>
+                <img src="images/product 30.jpg" alt="Solace">
+            </div>
+            <div class="content">
+                <h3><a href="products.html#solace">Solace</a></h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">12,000 XAF<span>17,000 XAF</span></div>
+            </div>
+        </div>
+
+        <div class="box" id="vesper">
+            <div class="image">
+                <div class="icons">
+                    <a href="javascript:void(0);" class="fas fa-shopping-cart" title="Add to Cart" 
+                       onclick="addToCart('Vesper', 15000, 'images/product 26.jpg')"></a>
+                </div>
+                <img src="images/product 26.jpg" alt="Vesper">
+            </div>
+            <div class="content">
+                <h3><a href="products.html#vesper">Vesper</a></h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">15,000 XAF<span>20,000 XAF</span></div>
+            </div>
+        </div>
+
+        <div class="box" id="celeste">
+            <div class="image">
+                <div class="icons">
+                    <a href="javascript:void(0);" class="fas fa-shopping-cart" title="Add to Cart" 
+                       onclick="addToCart('Celeste', 10000, 'images/product 17.jpg')"></a>
+                </div>
+                <img src="images/product 17.jpg" alt="Celeste">
+            </div>
+            <div class="content">
+                <h3><a href="products.html#celeste">Celeste</a></h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">10,000 XAF<span>15,000 XAF</span></div>
+            </div>
+        </div>
+
+        <div class="box" id="rosegold">
+            <div class="image">
+                <div class="icons">
+                    <a href="javascript:void(0);" class="fas fa-shopping-cart" title="Add to Cart" 
+                       onclick="addToCart('Rose Gold', 15000, 'images/product 15.jpg')"></a>
+                </div>
+                <img src="images/product 15.jpg" alt="Rose Gold">
+            </div>
+            <div class="content">
+                <h3><a href="products.html#rosegold">Rose Gold</a></h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">15,000 XAF<span>20,000 XAF</span></div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+<!-- Blue Light Glasses -->
+<section class="products">
+    <h2 class="category-title">Blue Light Glasses</h2>
+    <div class="box-container">
+
+        <div class="box" id="nova">
+            <div class="image">
+                <div class="icons">
+                    <a href="javascript:void(0);" class="fas fa-shopping-cart" title="Add to Cart" 
+                       onclick="addToCart('Nova', 15000, 'images/product 24.jpg')"></a>
+                </div>
+                <img src="images/product 24.jpg" alt="Nova">
+            </div>
+            <div class="content">
+                <h3><a href="products.html#nova">Nova</a></h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">15,000 XAF<span>20,000 XAF</span></div>
+            </div>
+        </div>
+
+        <div class="box" id="eclipse">
+            <div class="image">
+                <div class="icons">
+                    <a href="javascript:void(0);" class="fas fa-shopping-cart" title="Add to Cart" 
+                       onclick="addToCart('Eclipse', 10000, 'images/product 27.jpg')"></a>
+                </div>
+                <img src="images/product 27.jpg" alt="Eclipse">
+            </div>
+            <div class="content">
+                <h3><a href="products.html#eclipse">Eclipse</a></h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">10,000 XAF<span>15,000 XAF</span></div>
+            </div>
+        </div>
+
+        <div class="box" id="lyra">
+            <div class="image">
+                <div class="icons">
+                    <a href="javascript:void(0);" class="fas fa-shopping-cart" title="Add to Cart" 
+                       onclick="addToCart('Lyra', 12000, 'images/product 23.jpg')"></a>
+                </div>
+                <img src="images/product 23.jpg" alt="Lyra">
+            </div>
+            <div class="content">
+                <h3><a href="products.html#lyra">Lyra</a></h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">12,000 XAF<span>17,000 XAF</span></div>
+            </div>
+        </div>
+
+        <div class="box" id="luna">
+            <div class="image">
+                <div class="icons">
+                    <a href="javascript:void(0);" class="fas fa-shopping-cart" title="Add to Cart" 
+                       onclick="addToCart('Luna', 10000, 'images/product 28.jpg')"></a>
+                </div>
+                <img src="images/product 28.jpg" alt="Luna">
+            </div>
+            <div class="content">
+                <h3><a href="products.html#luna">Luna</a></h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">10,000 XAF<span>15,000 XAF</span></div>
+            </div>
+        </div>
+
+        <div class="box" id="iris">
+            <div class="image">
+                <div class="icons">
+                    <a href="javascript:void(0);" class="fas fa-shopping-cart" title="Add to Cart" 
+                       onclick="addToCart('Iris', 12000, 'images/product 31.jpg')"></a>
+                </div>
+                <img src="images/product 31.jpg" alt="Iris">
+            </div>
+            <div class="content">
+                <h3><a href="products.html#iris">Iris</a></h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">12,000 XAF<span>17,000 XAF</span></div>
+            </div>
+        </div>
+
+        <div class="box" id="celeste">
+            <div class="image">
+                <div class="icons">
+                    <a href="javascript:void(0);" class="fas fa-shopping-cart" title="Add to Cart" 
+                       onclick="addToCart('Celeste', 10000, 'images/product 17.jpg')"></a>
+                </div>
+                <img src="images/product 17.jpg" alt="Celeste">
+            </div>
+            <div class="content">
+                <h3><a href="products.html#celeste">Celeste</a></h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">10,000 XAF<span>15,000 XAF</span></div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+ <!-- Photochromic Glasses -->
+<section class="products">
+    <h2 class="category-title">Photochromic Glasses</h2>
+    <div class="box-container">
+
+        <div class="box" id="orion">
+            <div class="image">
+                <div class="icons">
+                    <a href="javascript:void(0);" class="fas fa-shopping-cart" title="Add to Cart"
+                       onclick="addToCart('Orion', 15000, 'images/product 21.jpg')"></a>
+                </div>
+                <img src="images/product 21.jpg" alt="Orion">
+            </div>
+            <div class="content">
+                <h3><a href="products.html#orion">Orion</a></h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">15,000 XAF<span>20,000 XAF</span></div>
+            </div>
+        </div>
+
+        <div class="box" id="vega">
+            <div class="image">
+                <div class="icons">
+                    <a href="javascript:void(0);" class="fas fa-shopping-cart" title="Add to Cart"
+                       onclick="addToCart('Vega', 12000, 'images/product 12.jpg')"></a>
+                </div>
+                <img src="images/product 12.jpg" alt="Vega">
+            </div>
+            <div class="content">
+                <h3><a href="products.html#vega">Vega</a></h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">12,000 XAF<span>17,000 XAF</span></div>
+            </div>
+        </div>
+
+        <div class="box" id="solace">
+            <div class="image">
+                <div class="icons">
+                    <a href="javascript:void(0);" class="fas fa-shopping-cart" title="Add to Cart"
+                       onclick="addToCart('Solace', 10000, 'images/product 18.jpg')"></a>
+                </div>
+                <img src="images/product 18.jpg" alt="Solace">
+            </div>
+            <div class="content">
+                <h3><a href="products.html#solace">Solace</a></h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">10,000 XAF<span>15,000 XAF</span></div>
+            </div>
+        </div>
+
+        <div class="box" id="zenith">
+            <div class="image">
+                <div class="icons">
+                    <a href="javascript:void(0);" class="fas fa-shopping-cart" title="Add to Cart"
+                       onclick="addToCart('Zenith', 15000, 'images/product 19.jpg')"></a>
+                </div>
+                <img src="images/product 19.jpg" alt="Zenith">
+            </div>
+            <div class="content">
+                <h3><a href="products.html#zenith">Zenith</a></h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">15,000 XAF<span>20,000 XAF</span></div>
+            </div>
+        </div>
+
+        <div class="box" id="horizon">
+            <div class="image">
+                <div class="icons">
+                    <a href="javascript:void(0);" class="fas fa-shopping-cart" title="Add to Cart"
+                       onclick="addToCart('Horizon', 12000, 'images/product 22.jpg')"></a>
+                </div>
+                <img src="images/product 22.jpg" alt="Horizon">
+            </div>
+            <div class="content">
+                <h3><a href="products.html#horizon">Horizon</a></h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">12,000 XAF<span>17,000 XAF</span></div>
+            </div>
+        </div>
+
+        <div class="box" id="eclipse-pro">
+            <div class="image">
+                <div class="icons">
+                    <a href="javascript:void(0);" class="fas fa-shopping-cart" title="Add to Cart"
+                       onclick="addToCart('Eclipse Pro', 10000, 'images/product 32.jpg')"></a>
+                </div>
+                <img src="images/product 32.jpg" alt="Eclipse Pro">
+            </div>
+            <div class="content">
+                <h3><a href="products.html#eclipse-pro">Eclipse Pro</a></h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">10,000 XAF<span>15,000 XAF</span></div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+<!-- Clear / Prescription Glasses -->
+<section class="products">
+    <h2 class="category-title">Clear / Prescription Glasses</h2>
+    <div class="box-container">
+
+        <div class="box" id="optima">
+            <div class="image">
+                <div class="icons">
+                    <a href="javascript:void(0);" class="fas fa-shopping-cart" title="Add to Cart"
+                       onclick="addToCart('Optima', 15000, 'images/product 13.jpg')"></a>
+                </div>
+                <img src="images/product 13.jpg" alt="Optima">
+            </div>
+            <div class="content">
+                <h3><a href="products.html#optima">Optima</a></h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">15,000 XAF<span>20,000 XAF</span></div>
+            </div>
+        </div>
+
+        <div class="box" id="aurora">
+            <div class="image">
+                <div class="icons">
+                    <a href="javascript:void(0);" class="fas fa-shopping-cart" title="Add to Cart"
+                       onclick="addToCart('Aurora', 15000, 'images/product 10.jpg')"></a>
+                </div>
+                <img src="images/product 10.jpg" alt="Aurora">
+            </div>
+            <div class="content">
+                <h3><a href="products.html#aurora">Aurora</a></h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">15,000 XAF<span>20,000 XAF</span></div>
+            </div>
+        </div>
+
+        <div class="box" id="vesper">
+            <div class="image">
+                <div class="icons">
+                    <a href="javascript:void(0);" class="fas fa-shopping-cart" title="Add to Cart"
+                       onclick="addToCart('Vesper', 15000, 'images/product 26.jpg')"></a>
+                </div>
+                <img src="images/product 26.jpg" alt="Vesper">
+            </div>
+            <div class="content">
+                <h3><a href="products.html#vesper">Vesper</a></h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">15,000 XAF<span>20,000 XAF</span></div>
+            </div>
+        </div>
+
+        <div class="box" id="tortoise">
+            <div class="image">
+                <div class="icons">
+                    <a href="javascript:void(0);" class="fas fa-shopping-cart" title="Add to Cart"
+                       onclick="addToCart('Tortoise', 15000, 'images/product 25.jpg')"></a>
+                </div>
+                <img src="images/product 25.jpg" alt="Tortoise">
+            </div>
+            <div class="content">
+                <h3><a href="products.html#tortoise">Tortoise</a></h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">15,000 XAF<span>20,000 XAF</span></div>
+            </div>
+        </div>
+
+        <div class="box" id="rosegold">
+            <div class="image">
+                <div class="icons">
+                    <a href="javascript:void(0);" class="fas fa-shopping-cart" title="Add to Cart"
+                       onclick="addToCart('Rose Gold', 15000, 'images/product 15.jpg')"></a>
+                </div>
+                <img src="images/product 15.jpg" alt="Rose Gold">
+            </div>
+            <div class="content">
+                <h3><a href="products.html#rosegold">Rose Gold</a></h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">15,000 XAF<span>20,000 XAF</span></div>
+            </div>
+        </div>
+
+        <div class="box" id="aviator">
+            <div class="image">
+                <div class="icons">
+                    <a href="javascript:void(0);" class="fas fa-shopping-cart" title="Add to Cart"
+                       onclick="addToCart('Aviator', 15000, 'images/product 20.jpg')"></a>
+                </div>
+                <img src="images/product 20.jpg" alt="Aviator">
+            </div>
+            <div class="content">
+                <h3><a href="products.html#aviator">Aviator</a></h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">15,000 XAF<span>20,000 XAF</span></div>
+            </div>
+        </div>
+
+        <div class="box" id="clearview">
+            <div class="image">
+                <div class="icons">
+                    <a href="javascript:void(0);" class="fas fa-shopping-cart" title="Add to Cart"
+                       onclick="addToCart('ClearView', 15000, 'images/product 11.jpg')"></a>
+                </div>
+                <img src="images/product 11.jpg" alt="ClearView">
+            </div>
+            <div class="content">
+                <h3><a href="products.html#clearview">ClearView</a></h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">15,000 XAF<span>20,000 XAF</span></div>
+            </div>
+        </div>
+
+        <div class="box" id="dualtone">
+            <div class="image">
+                <div class="icons">
+                    <a href="javascript:void(0);" class="fas fa-shopping-cart" title="Add to Cart"
+                       onclick="addToCart('DualTone', 15000, 'images/product 16.jpg')"></a>
+                </div>
+                <img src="images/product 16.jpg" alt="DualTone">
+            </div>
+            <div class="content">
+                <h3><a href="products.html#dualtone">DualTone</a></h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
+                <div class="price">15,000 XAF<span>20,000 XAF</span></div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+    <!-- prodcuts section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer section starts  -->
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="home.html"> <i class="fas fa-angle-right"></i> home</a>
+                <a href="products.html"> <i class="fas fa-angle-right"></i> products</a>
+                <a href="about.html"> <i class="fas fa-angle-right"></i> about</a>
+                <a href="contact.html"> <i class="fas fa-angle-right"></i> contact</a>
+                <a href="login.html"> <i class="fas fa-angle-right"></i> login</a>
+                <a href="cart.html"> <i class="fas fa-angle-right"></i> cart</a>
+            </div>
+
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="https://wa.me/+237699324290" target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+                <a href="https://www.facebook.com/Erica Ebob" target="_blank">
+                    <i class="fab fa-facebook-f"></i> Facebook
+                </a>
+                <a href="https://www.instagram.com/Erica Ebob" target="_blank">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="https://github.com/OBENEBOB/Digital-Marketing-website-" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+
+            </div>
+
+           
+
+        </div>
+
+        <div class="credit"> created by <span>eyewear by joan</span> | all rights reserved </div>
+
+    </section>
+
+    <!-- footer section ends -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

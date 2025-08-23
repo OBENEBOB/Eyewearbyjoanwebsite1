@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+
+    <!-- font awesome cdn link  -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- custom js file link  -->
+    <script src="js/script.js" defer></script>
+
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header class="header">
+
+   
+        <a href="home.html" class="logo"> EYEWEAR BY JOAN </a>
+        <nav class="navbar">
+        <ul>
+            <li><a href="home.html">home</a></li>
+             <li><a href="about.html">about</a></li>
+            <li><a href="products.html">products</a></li>
+               <li><a href="catalog.html">catalog</a></li>
+            <li><a href="contact.html">contact</a></li>
+            <li><a href="login.html">login</a></li>
+        </ul>
+    </nav>
+ 
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <a href="cart.html" class="fas fa-shopping-cart"></a>
+    </div>
+<form action="" class="search-form">
+        <input type="search" name="" placeholder="search here..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+  
+
+</header>
+
+<!-- header section ends -->
+
+<!-- header section  -->
+
+<section class="heading">
+    <h1>account</h1>
+    <p> <a href="home.html">home</a> >> register </p>
+</section>
+
+<!-- header section -->
+
+<!-- header section -->
+
+<!-- register form section starts -->
+
+<section class="register-form">
+    <form id="registerForm">
+        <h3>Register Now</h3>
+        <div class="inputBox">
+            <span class="fas fa-user"></span>
+            <input type="text" placeholder="Enter your name" id="regName" required>
+        </div>
+        <div class="inputBox">
+            <span class="fas fa-envelope"></span>
+            <input type="email" placeholder="Enter your email" id="regEmail" required>
+        </div>
+        <div class="inputBox">
+            <span class="fas fa-lock"></span>
+            <input type="password" placeholder="Enter your password" id="regPassword" required>
+        </div>
+        <div class="inputBox">
+            <span class="fas fa-lock"></span>
+            <input type="password" placeholder="Confirm your password" id="regConfirmPassword" required>
+        </div>
+        <input type="button" value="Sign Up" class="btn" id="registerBtn">
+        <a href="login.html" class="btn">Already have an account? Login</a>
+    </form>
+</section>
+
+<script>
+document.getElementById("registerBtn").addEventListener("click", function() {
+    const name = document.getElementById("regName").value.trim();
+    const email = document.getElementById("regEmail").value.trim();
+    const password = document.getElementById("regPassword").value.trim();
+    const confirmPassword = document.getElementById("regConfirmPassword").value.trim();
+
+    if (!name || !email || !password || !confirmPassword) {
+        alert("Please fill in all fields.");
+        return;
+    }
+
+    if (password !== confirmPassword) {
+        alert("Passwords do not match!");
+        return;
+    }
+
+    // Check if user already exists
+    let users = JSON.parse(localStorage.getItem("users")) || [];
+    const userExists = users.some(u => u.email === email);
+
+    if (userExists) {
+        alert("Email already registered. Please login.");
+        return;
+    }
+
+    // Save user
+    users.push({ name, email, password });
+    localStorage.setItem("users", JSON.stringify(users));
+
+    alert("Registration successful! You can now login.");
+    window.location.href = "login.html";
+});
+</script>
+
+
+<!-- register form section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- footer section starts  -->
+
+ <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="home.html"> <i class="fas fa-angle-right"></i> home</a>
+                <a href="products.html"> <i class="fas fa-angle-right"></i> products</a>
+                <a href="about.html"> <i class="fas fa-angle-right"></i> about</a>
+                <a href="contact.html"> <i class="fas fa-angle-right"></i> contact</a>
+                <a href="login.html"> <i class="fas fa-angle-right"></i> login</a>
+                <a href="cart.html"> <i class="fas fa-angle-right"></i> cart</a>
+            </div>
+
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="https://wa.me/+237699324290" target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+                <a href="https://www.facebook.com/Erica Ebob" target="_blank">
+                    <i class="fab fa-facebook-f"></i> Facebook
+                </a>
+                <a href="https://www.instagram.com/Erica Ebob" target="_blank">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="https://github.com/OBENEBOB/Digital-Marketing-website-" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+
+            </div>
+
+          
+
+        </div>
+
+        <div class="credit"> created by <span>eyewear by joan</span> | all rights reserved </div>
+
+    </section>
+
+<!-- footer section ends -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>

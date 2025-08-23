@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+
+    <!-- font awesome cdn link  -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- custom js file link  -->
+<script src="js/script.js" defer></script>
+
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header class="header">
+      <a href="home.html" class="logo"> EYEWEAR BY JOAN </a>
+      <nav class="navbar">
+        <ul>
+            <li><a href="home.html">home</a></li>
+             <li><a href="about.html">about</a></li>
+            <li><a href="products.html">products</a></li>
+               <li><a href="catalog.html">catalog</a></li>
+            <li><a href="contact.html">contact</a></li>
+            <li><a href="login.html">login</a></li>
+        </ul>
+    </nav>
+
+   
+   <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+            <a href="cart.html" class="fas fa-shopping-cart"></a>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" name="" placeholder="search here..." id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+<div class="box-container" id="cart-container">
+    <!-- Cart items injected here by JS -->
+</div>
+</header>
+
+<!-- header section ends -->
+
+<!-- header section  -->
+
+<section class="heading">
+    <h1>account</h1>
+    <p> <a href="home.html">home</a> >> login </p>
+</section>
+
+<!-- header section -->
+
+<!-- login form section starts -->
+
+<section class="login-form">
+    <form id="loginForm">
+        <h3>User Login</h3>
+        <div class="inputBox">
+            <span class="fas fa-user"></span>
+            <input type="email" placeholder="Enter your email" id="loginEmail" required>
+        </div>
+        <div class="inputBox">
+             <span class="fas fa-lock"></span>
+            <input type="password" placeholder="Enter your password" id="loginPassword" required>
+        </div>
+        <input type="submit" value="Sign in" class="btn" id="loginBtn">
+        <div class="flex">
+            <input type="checkbox" id="remember-me">
+            <label for="remember-me">Remember me</label>
+            <a href="#" id="forgotLink">Forgot password?</a>
+        </div>
+        <a href="register.html" class="btn">Don't have an account? Register</a>
+    </form>
+</section>
+
+<script>
+// Redirect if already logged in
+window.addEventListener("load", () => {
+    const loggedIn = localStorage.getItem("loggedInUser");
+    if (loggedIn) {
+        alert(`Welcome back, ${loggedIn}! Redirecting to dashboard...`);
+        window.location.href = "dashboard.html";
+    }
+});
+
+// Login functionality
+document.getElementById("loginBtn").addEventListener("click", function() {
+    const email = document.getElementById("loginEmail").value.trim();
+    const password = document.getElementById("loginPassword").value.trim();
+    const remember = document.getElementById("remember-me").checked;
+
+    if (!email || !password) {
+        alert("Please enter both email and password.");
+        return;
+    }
+
+    let users = JSON.parse(localStorage.getItem("users")) || [];
+    const user = users.find(u => u.email === email && u.password === password);
+
+    if (user) {
+        alert("Login successful!");
+        if (remember) localStorage.setItem("loggedInUser", email);
+        window.location.href = "dashboard.html";
+    } else {
+        alert("Invalid email or password!");
+    }
+});
+
+// Forgot password functionality
+document.getElementById("forgotLink").addEventListener("click", function(e) {
+    e.preventDefault(); // IMPORTANT: prevents link default behavior
+
+    const email = prompt("Please enter your registered email to reset password:");
+    if (!email) {
+        alert("You must enter your email!");
+        return;
+    }
+
+    let users = JSON.parse(localStorage.getItem("users")) || [];
+    const user = users.find(u => u.email === email.trim());
+
+    if (user) {
+        alert(`Your password is: ${user.password}`);
+    } else {
+        alert("Email not found. Please register first.");
+    }
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- footer section starts  -->
+ <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="home.html"> <i class="fas fa-angle-right"></i> home</a>
+                <a href="products.html"> <i class="fas fa-angle-right"></i> products</a>
+                <a href="about.html"> <i class="fas fa-angle-right"></i> about</a>
+                <a href="contact.html"> <i class="fas fa-angle-right"></i> contact</a>
+                <a href="login.html"> <i class="fas fa-angle-right"></i> login</a>
+                <a href="cart.html"> <i class="fas fa-angle-right"></i> cart</a>
+            </div>
+
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="https://wa.me/+237699324290" target="_blank">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+                <a href="https://www.facebook.com/Erica Ebob" target="_blank">
+                    <i class="fab fa-facebook-f"></i> Facebook
+                </a>
+                <a href="https://www.instagram.com/Erica Ebob" target="_blank">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="https://github.com/OBENEBOB/Digital-Marketing-website-" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+
+            </div>
+
+           
+
+        </div>
+
+        <div class="credit"> created by <span>eyewear by joan</span> | all rights reserved </div>
+
+    </section>
+
+<!-- footer section ends -->
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>
